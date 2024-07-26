@@ -66,7 +66,7 @@ export function BusinessInfoCard(props) {
   });
 
   return (
-    <Card className="w-[350px] md:w-auto">
+    <Card className=" md:w-auto">
       <CardHeader>
         <CardTitle>Datos de mi negocio</CardTitle>
         <CardDescription>

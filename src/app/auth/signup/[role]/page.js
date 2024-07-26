@@ -32,6 +32,7 @@ const Signup = ({ params }) => {
   const [passwordError, setPasswordError] = useState(false);
   const [selectedField, setSelectedField] = React.useState("Peluquería");
 
+  console.log(params.role, "ROLLLL");
   const onSubmit = handleSubmit(async (data) => {
     if (data.password !== data.confirmPassword) {
       setPasswordError(true);

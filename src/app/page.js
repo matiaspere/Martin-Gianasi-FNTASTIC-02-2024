@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
-
+import example from "../../public/example-dashboard.png";
+import example2 from "../../public/example2.png";
 
 export default function Home() {
-
   return (
     <>
       <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center">
@@ -17,10 +17,13 @@ export default function Home() {
           </p>
         </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl text-center">
-          Ofrecé tus <span className="text-blue-600">servicios</span> a toda tu ciudad.
+          Ofrecé tus <span className="text-blue-600">servicios</span> a toda tu
+          ciudad.
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg text-center">
-          FNTASTIC te permite dar a conocer tu negocio a todo el mundo y gestionar tu negocio en una plataforma integral. Simplemente cargá tus servicios y empezá a generar ventas.
+          FNTASTIC te permite dar a conocer tu negocio a todo el mundo y
+          gestionar tu negocio en una plataforma integral. Simplemente cargá tus
+          servicios y empezá a generar ventas.
         </p>
 
         <Link
@@ -55,7 +58,7 @@ export default function Home() {
               <div className="mt-16 flox-root sm:mt-24">
                 <div className="-m-2 rounded-lg bg-gray-900/5 p-2 ring-1 ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                   <Image
-                    src="/dashboard-preview.jpg"
+                    src={example}
                     width={1364}
                     height={866}
                     alt="product review"
@@ -89,7 +92,8 @@ export default function Home() {
               Atraé a más clientes y gestioná tus reservas fácilmente
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Lograr que más gente te conozca, gestionar tus reservas, tus servicios y tus ventas nunca fue tan fácil con FNTASTIC.
+              Lograr que más gente te conozca, gestionar tus reservas, tus
+              servicios y tus ventas nunca fue tan fácil con FNTASTIC.
             </p>
           </div>
         </div>
@@ -119,7 +123,9 @@ export default function Home() {
                 Carga tu información
               </span>
               <span className="mt-2 text-zinc-700">
-                Indicá cuales son los servicios que ofreces junto con sus precios, los horarios en los que estás disponible, tus empleados, etc.
+                Indicá cuales son los servicios que ofreces junto con sus
+                precios, los horarios en los que estás disponible, tus
+                empleados, etc.
               </span>
             </div>
           </li>
@@ -131,7 +137,8 @@ export default function Home() {
                 Empezá a atraer clientes
               </span>
               <span className="mt-2 text-zinc-700">
-                ¡Es así de sencillo! Llegá a un público más amplio y gestioná todas tus reservas en FNTASTIC.
+                ¡Es así de sencillo! Llegá a un público más amplio y gestioná
+                todas tus reservas en FNTASTIC.
               </span>
             </div>
           </li>
@@ -141,7 +148,7 @@ export default function Home() {
           <div className="mt-16 flox-root sm:mt-24">
             <div className="-m-2 rounded-lg bg-gray-900/5 p-2 ring-1 ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
-                src="/file-upload-preview.jpg"
+                src={example2}
                 width={1419}
                 height={732}
                 alt="uploading preview"
